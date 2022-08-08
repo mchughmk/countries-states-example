@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Countries/States App Example</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body onload="populateCountries()">
+        <div class="form">
+            <label for="country">Country:</label>
+            <select id="country" name="country" onchange="populateStates(this.value)">
+                <option disabled selected value> -- Select a Country -- </option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option disabled selected value> -- Select a State -- </option>
+            </select>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
